@@ -1,0 +1,43 @@
+@import "mediaQuery";
+/// 小裝置寬度範圍內隱藏
+@mixin hide-at-sm {
+  display: none !important;
+  @include screen-large-then(sm) {
+    display: inherit;
+  }
+}
+/// 中等寬度範圍內隱藏
+@mixin hide-at-md {
+  display: none !important;
+  @include screen-large-then(md) {
+    display: inherit;
+  }
+}
+/// 小裝置寬度範圍內顯示
+@mixin show-at-sm {
+  display: none !important;
+  @include screen-is(sm) {
+    display: block !important;
+  }
+}
+/// 大螢幕寬度以上隱藏
+@mixin hide-at-lg {
+  display: block;
+  @include screen-is(lg) {
+    display: none !important;
+  }
+}
+/// 大螢幕寬度範圍以下隱藏
+@mixin hide-small-than-lg {
+  display: none !important;
+  @include screen-large-then(lg) {
+    display: block;
+  }
+}
+/// 大螢幕寬度以上顯示
+@mixin show-at-lg {
+  display: none !important;
+  @include screen-is(lg) {
+    display: block;
+  }
+}

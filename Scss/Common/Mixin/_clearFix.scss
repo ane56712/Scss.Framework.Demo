@@ -1,0 +1,8 @@
+/// 清除浮動
+@mixin clearfix() {
+  &:before, &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

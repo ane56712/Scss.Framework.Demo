@@ -1,0 +1,31 @@
+._btn{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  line-height: 1;
+  text-align: center;
+}
+
+.btn-primary {
+  @extend ._btn;
+  background-color: $light-red;
+  color: $red;
+  border: 1px solid $red;
+  &:hover{
+    background-color: saturate(darken($light-red, 6), 2);
+    cursor: pointer;
+  }
+  &:active{
+    background-color: $red;
+    color: $white;
+    box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  }
+}
+.btn-disable{
+  @extend ._btn;
+  border: none;
+  background-color: $disable-background;
+  color: $disable-font;
+  cursor: default;
+}

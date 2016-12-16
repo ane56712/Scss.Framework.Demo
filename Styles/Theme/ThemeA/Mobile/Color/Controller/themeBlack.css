@@ -1,0 +1,31 @@
+.layout-top {
+  height: 55px;
+}
+
+.layout-header {
+  position: fixed;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  z-index: 500;
+}
+
+body {
+  background-color: #4A4A4A;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto 30px;
+  overflow: hidden;
+}
+
+.container:before,
+.container:after {
+  display: table;
+  content: " ";
+}
+
+.container:after {
+  clear: both;
+}

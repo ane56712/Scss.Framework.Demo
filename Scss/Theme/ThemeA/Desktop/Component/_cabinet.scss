@@ -1,0 +1,50 @@
+@import "../../../../Common/Mixin/limitLineTitle";
+@import "../../../../Common/Mixin/vendor";
+
+.cabinet {
+  .cabinet-link {
+    @include box-shadow(0 1px 2px $box-shadow);
+    position: relative;
+    display: block;
+    background-color: $white;
+  }
+  .cabinet-top {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background-size: 100%;
+    &:before {
+      content: "";
+      display: block;
+      margin-top: 100%;
+    }
+  }
+  .cabinet-middle {
+    height: 100px;
+    padding: 8px;
+  }
+  .cabinet-title {
+    color: $mainText;
+    @include limitLineTitle(13px, 2, 18px);
+  }
+  .cabinet-price {
+    display: block;
+    font-size: 1.1em;
+    color: $price;
+    font-weight: 700;
+    line-height: 1;
+    position: absolute;
+    bottom: 7px;
+  }
+  .cabinet-suggest-price {
+    display: block;
+    font-weight: normal;
+    font-size: 0.6em;
+    line-height: 1;
+    color: $grey;
+    text-decoration: line-through;
+    position: absolute;
+    bottom: 32px;
+  }
+
+}

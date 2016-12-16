@@ -1,0 +1,14 @@
+/// 矩形標籤
+/// @param {string} $backgroud 背景顏色
+/// @param {string} $color 字型顏色
+/// @param {string} $border-color 框線顏色
+/// @param {string} $font-size 字型大小
+@mixin rectangle-tag($font-size,$backgroud,$color,$border-color:$color){
+  padding: 3px;
+  font-size: $font-size;
+  background-color: $backgroud;
+  color: $color;
+  border: solid 1px $border-color;
+  display: inline-block;
+  line-height: 1;
+}

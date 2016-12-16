@@ -1,0 +1,4 @@
+@import "../Common/Mixin/clearFix";
+.clearfix{
+  @include clearfix();
+}

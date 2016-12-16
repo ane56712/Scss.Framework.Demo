@@ -1,0 +1,8 @@
+/// 清除IOS預設樣式，如：輸入框及按鈕的陰影
+@mixin webkitDefaultInit(){
+  -webkit-appearance: none;
+}
+/// 使position fix在safari顯示比較平順
+@mixin webkitPositionFix(){
+  -webkit-transform: translateZ(0);
+}

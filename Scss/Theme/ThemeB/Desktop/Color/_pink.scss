@@ -1,0 +1,14 @@
+@import "baseLight";
+$theme-color:#EE8AA2;
+$layout-header: (
+        headerBackground:rgba($theme-color,0.85),
+        headerFont:$topBarText
+);
+$component-menu-list: (
+        menuLiPseudoColor:adjust_hue(saturate(lighten($theme-color, 12), 8), -4),
+        menuLinkColor:$mainText,
+        menuLinkBorderColor:#cccccc,
+        childMenuLinkBGColor:adjust_hue(saturate(lighten($theme-color, 23), 23), -4),
+        childMenuLinkHoverBGColor:adjust_hue(saturate(lighten($theme-color, 12), 8), -4),
+        childMenuLinkHoverColor:$white
+);

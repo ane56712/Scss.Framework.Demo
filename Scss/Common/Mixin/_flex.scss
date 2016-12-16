@@ -1,0 +1,16 @@
+/// displayFlex 螢幕排版
+@mixin displayFlex(){
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/// flex 設定排版比例
+/// @param {number} $grow 比例
+@mixin flex($grow){
+  -webkit-flex: $grow;
+  -ms-flex: $grow ;
+  flex: $grow ;
+}

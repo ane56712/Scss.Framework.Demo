@@ -1,0 +1,36 @@
+@import "../../../../Common/Mixin/webkitDefaultInit";
+.search-bar {
+  background: rgba(255,255,255,.8);
+  color: #666;
+  width: 145px;
+  position: relative;
+  display: inline-block;
+  box-sizing: content-box;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  .search-input {
+    border-radius: 6px;
+    height: 28px;
+    padding: 0 28px 0 8px;
+    font-size: 14px;
+    width: 100%;
+    border:none;
+    @include webkitDefaultInit;
+  }
+
+  .search-btn{
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    position: absolute;
+    right: 0;
+    top:0;
+  }
+  .fa-search {
+    color: #666;
+    line-height: 28px;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+}

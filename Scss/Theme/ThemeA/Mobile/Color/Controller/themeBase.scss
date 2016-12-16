@@ -1,0 +1,29 @@
+@import "compass/css3";
+//-----------------------------
+//  Model
+//-----------------------------
+@import "../../Model/base";
+@import "../../Model/mediaQuerySetting";
+@import "../../Model/zindex";
+//-----------------------------
+//  Common
+//-----------------------------
+@import "../../../../../Common/Mixin/displayAtDevice";
+@import "../../../../../Common/Mixin/clearFix";
+@import "../../../../../Common/reset";
+@import "../../../../../Common/gridSystem";
+//-----------------------------
+//  State
+//-----------------------------
+@import "../../../../../State/clearfix";
+@import "../../../../../State/displayAtDevice";
+@import "../../../../../State/position";
+//-----------------------------
+//  Color
+//-----------------------------
+@import "../../Color/baseColor";
+//-----------------------------
+//  Layout
+//-----------------------------
+@import "../../Layout/footer";
+

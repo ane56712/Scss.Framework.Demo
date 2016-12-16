@@ -1,0 +1,20 @@
+/// border 框線
+/// @param {width,style,color} $setting 框線設定（寬度、樣式、顏色）
+@mixin border($setting){
+  border-top:$setting;
+  border-left:$setting;
+  border-right:$setting;
+  border-bottom:$setting;
+}
+/// 左右平行框線
+/// @param {width,style,color} $setting 框線設定（寬度、樣式、顏色）
+@mixin border-hozl($setting){
+  border-left:$setting;
+  border-right:$setting;
+}
+/// 上下平行框線
+/// @param {width,style,color} $setting 框線設定（寬度、樣式、顏色）
+@mixin border-verl($setting){
+  border-top:$setting;
+  border-bottom:$setting;
+}

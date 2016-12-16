@@ -1,0 +1,12 @@
+/// 垂直置中 by 偽元素
+/// @link http://www.oxxostudio.tw/articles/201408/css-vertical-align.html
+@mixin verticalAlignByPseudo(){
+  &:before{
+    content:'';
+    width:0;
+    height:100%;
+    display:inline-block;
+    position:relative;
+    vertical-align:middle;
+  }
+}

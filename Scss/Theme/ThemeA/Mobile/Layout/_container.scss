@@ -1,0 +1,16 @@
+body{
+  background-color: $headerBG;
+}
+.container{
+  width:100%;
+  margin: 0 auto $footer-height;
+  overflow: hidden;
+}
+.container:before,
+.container:after {
+  display: table;
+  content: " ";
+}
+.container:after {
+  clear: both;
+}

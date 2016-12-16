@@ -1,0 +1,16 @@
+/// limitLineTitle 限制標題行數，超過則顯示“...”
+/// @param $fontSize 字體大小
+/// @param $limitLine 限制行數
+/// @param $lineHeight 行高,預設為$fontSize＋１
+@mixin limitLineTitle($fontSize, $limitLine,$lineHeight:$fontSize+1) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  text-overflow: ellipsis;
+  white-space: normal;
+  -webkit-line-clamp: $limitLine;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+  height: $lineHeight*$limitLine;
+}

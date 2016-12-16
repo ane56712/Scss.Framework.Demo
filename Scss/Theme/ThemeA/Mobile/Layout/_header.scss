@@ -1,0 +1,10 @@
+﻿.layout-top{
+  height: $header-height;
+}
+.layout-header {
+  position: fixed;
+  height: inherit;
+  background-color: map_get($layout-header,headerBackground);
+  color:map_get($layout-header,headerFont);
+  z-index: map_get($header-zindex,layoutHeader);
+}

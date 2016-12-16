@@ -1,0 +1,10 @@
+.layout-footer {
+  position: relative;
+  bottom: 0;
+  height: $footer-height;
+  background-color: $white;
+  color: $black;
+  z-index: map_get($footer-zindex,layoutFooter);
+  border-top: 5px solid $black;
+}
+

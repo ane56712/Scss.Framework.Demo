@@ -1,0 +1,9 @@
+.layout-footer {
+  position: fixed;
+  bottom: 0;
+  height: $footer-height;
+  background-color: $black;
+  color: $white;
+  z-index: map_get($footer-zindex,layoutFooter);
+}
+

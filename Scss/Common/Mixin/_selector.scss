@@ -1,0 +1,36 @@
+/// 下拉式選單，以後如用到下拉式選單建議用此樣式，用原生html tag手機版的支援度會較好，可參考購物車第一頁折價券
+@mixin selector($arrowCode, $font){
+  text-align: center;
+  position: relative;
+  border: 1px solid #e4e4e4;
+  select {
+    height: 38px;
+    width: 100%;
+    background: #fdfdfd;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border-radius: 0;
+    -webkit-appearance: none;
+  }
+  &:before {
+    content: $arrowCode;
+    position: absolute;
+    right: 0;
+    height: 38px;
+    width: 20px;
+    display: inline-block;
+    top: 0;
+    font-size: 12px;
+    box-sizing: border-box;
+    background: #fdfdfd;
+    line-height: 38px;
+    border: none;
+    color: #8b8e90;
+    font: $font;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-top: 12px;
+  }
+}

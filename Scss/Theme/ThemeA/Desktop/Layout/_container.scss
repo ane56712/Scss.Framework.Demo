@@ -1,0 +1,26 @@
+body{
+  background-color: $headerBG;
+}
+.container{
+  width:100%;
+  margin: $header-height auto $footer-height;
+  overflow: hidden;
+  @media (min-width: $sm){
+    width: 750px;
+  }
+  @media (min-width: $md){
+    width: 970px;
+  }
+  @media (min-width: $lg){
+    width: 1170px;
+  }
+
+}
+.container:before,
+.container:after {
+  display: table;
+  content: " ";
+}
+.container:after {
+  clear: both;
+}

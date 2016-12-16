@@ -1,0 +1,75 @@
+.cabinet .cabinet-link {
+  -webkit-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.2);
+  box-shadow: 0 1px 2px rgba(71, 73, 72, 0.2);
+  position: relative;
+  display: block;
+  background-color: #fff;
+}
+.cabinet .cabinet-top {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  background-size: 100%;
+}
+.cabinet .cabinet-top:before {
+  content: "";
+  display: block;
+  margin-top: 100%;
+}
+.cabinet .cabinet-middle {
+  height: 100px;
+  padding: 8px;
+}
+.cabinet .cabinet-title {
+  color: #666666;
+  font-size: 13px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: normal;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+  height: 36px;
+}
+.cabinet .cabinet-price {
+  display: block;
+  font-size: 1.1em;
+  color: #ff5353;
+  font-weight: 700;
+  line-height: 1;
+  position: absolute;
+  bottom: 7px;
+}
+.cabinet .cabinet-suggest-price {
+  display: block;
+  font-weight: normal;
+  font-size: 0.6em;
+  line-height: 1;
+  color: #bababa;
+  text-decoration: line-through;
+  position: absolute;
+  bottom: 32px;
+}
+
+.cabinet-list {
+  padding: 0 1%;
+}
+.cabinet-list .cabinet-li {
+  margin: 0 1% 2%;
+  box-sizing: border-box;
+}
+
+.search-block .grid-li {
+  display: inline-block;
+}
+
+.main-vision-img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+button {
+  margin-top: 15px;
+}

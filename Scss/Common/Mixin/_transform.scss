@@ -1,0 +1,9 @@
+/// tramsform 旋轉、傾斜、縮放等變形效果，加上瀏覽器前綴
+/// @param $transforms transfoms 設定
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}

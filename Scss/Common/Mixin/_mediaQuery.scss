@@ -1,0 +1,52 @@
+/// 指定螢幕尺寸範圍內
+/// @param {string} $screenType [sm, md, lg] - 在指定螢幕寬度範圍的 css 設定。
+/// @content scss codes
+@mixin screen-is($screenType) {
+  @if $screenType == sm {
+    @media only screen and (max-width: $sm - 1) {
+      @content;
+    }
+  }
+  @if $screenType == md {
+    @media only screen and (min-width: $sm) and (max-width: $md - 1) {
+      @content;
+    }
+  }
+  @else if $screenType == lg {
+    @media only screen and (min-width: $md) {
+      @content;
+    }
+  }
+}
+
+/// 指定大於某螢幕尺寸
+/// @param {string} $screenType [sm, md] - 大於此螢幕尺寸的 css 設定
+/// @content scss codes
+@mixin screen-large-then($screenType) {
+  @if $screenType == sm {
+    @media only screen and (min-width: $sm) {
+      @content;
+    }
+  }
+  @if $screenType == md {
+    @media only screen and (min-width: $md) {
+      @content;
+    }
+  }
+}
+
+/// 指定小於某螢幕尺寸
+/// @param {string} $screenType [md, lg] - 小於此螢幕尺寸的 css 設定
+/// @content scss codes
+@mixin screen-small-then($screenType) {
+  @if $screenType == md {
+    @media only screen and (max-width: $sm - 1) {
+      @content;
+    }
+  }
+  @if $screenType == lg {
+    @media only screen and (max-width: $md - 1) {
+      @content;
+    }
+  }
+}

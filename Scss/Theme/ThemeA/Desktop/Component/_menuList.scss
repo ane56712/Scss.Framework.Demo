@@ -1,0 +1,59 @@
+@import "../../../../Common/Mixin/clearHighlightColor";
+@import "../../../../Common/Mixin/vendor";
+.menu-list {
+  .menu-li {
+    line-height: 17px;
+    -webkit-transform: translateZ(0);
+  }
+  ._menu-li-pseudo {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    float: right;
+    font-size: 24px;
+    color: map_get($component-menu-list,menuLiPseudoColor);
+  }
+  .menu-link {
+    width: 100%;
+    display: inline-block;
+    line-height: inherit;
+    text-align: left;
+    box-sizing: border-box;
+    color: map_get($component-menu-list,menuLinkColor);
+    padding: 12px 20px;
+    border-bottom: 1px dashed map_get($component-menu-list,menuLinkBorderColor);
+    @include clearHighlightColor();
+    font-weight: 100;
+    font-size: 15px;
+    font-family: Arial;
+    &.close:after {
+      @extend ._menu-li-pseudo;
+      content: "＋";
+    }
+    &.open:after {
+      @extend ._menu-li-pseudo;
+      content: "－";
+    }
+  }
+  .child-menu-ul {
+    @include transition(all 0.3s cubic-bezier(0.23, 1, 0.32, 1));
+    overflow: hidden;
+    max-height: 0;
+    &.open {
+      max-height: 9999px;
+    }
+  }
+  .child-menu-link {
+    @extend .menu-link;
+    @include transition(background 0.1s);
+    padding-left: 10%;
+    word-wrap: break-word;
+    background: map_get($component-menu-list,childMenuLinkBGColor);
+    &:hover {
+      background-color: map_get($component-menu-list,childMenuLinkHoverBGColor);
+      color:map_get($component-menu-list,childMenuLinkHoverColor);
+    }
+  }
+}

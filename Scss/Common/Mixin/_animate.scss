@@ -1,0 +1,14 @@
+/// animate 動畫
+/// @param {string} $name - 動畫名稱。(animation-name)
+/// @param {string} $time - 執行時間。(animation-duration)
+/// @param {string} $way - 動畫方式。(animation-timing-function)
+@mixin animate($name, $time, $way){
+  -webkit-animation: $name $time $way 0s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: $name $time $way 0s;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation: $name $time $way 0s;
+  -ms-animation-fill-mode: forwards;
+  animation: $name $time $way 0s;
+  animation-fill-mode: forwards;
+}

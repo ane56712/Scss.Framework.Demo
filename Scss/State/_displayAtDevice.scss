@@ -1,0 +1,64 @@
+.hide-at-sm {
+  @include hide-at-sm;
+}
+
+.hide-at-lg{
+  @include hide-at-lg;
+}
+
+.hide-small-than-lg{
+  @include hide-small-than-lg;
+}
+
+.show-at-lg{
+  @include show-at-lg;
+}
+
+.show-at-sm{
+  @include show-at-sm;
+}
+
+._hide-at-sm{
+  @include screen-is(sm){
+    display: none !important;
+  }
+}
+
+._hide-at-md{
+  @include screen-is(md){
+    display: none !important;
+  }
+}
+
+._hide-at-lg{
+  @include screen-is(lg){
+    display: none !important;
+  }
+}
+
+._show-at-sm{
+  @include screen-is(sm){
+    display: block !important;
+  }
+}
+
+._show-at-md{
+  @include screen-is(md){
+    display: block !important;
+  }
+}
+
+._show-at-lg{
+  @include screen-is(lg){
+    display: block !important;
+  }
+}
+
+.hide{
+  display: none !important;
+}
+
+.show{
+  display: block !important;
+  opacity: 10 !important;
+}

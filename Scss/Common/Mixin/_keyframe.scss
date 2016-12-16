@@ -1,0 +1,20 @@
+/// keyframes 動畫設定
+/// @param {string} $name 動畫名稱
+/// @content 實作css變化
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}

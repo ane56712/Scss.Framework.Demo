@@ -1,0 +1,44 @@
+@import "../../../../Common/Mixin/clearHighlightColor";
+@import "../../../../Common/Mixin/vendor";
+.menu-list {
+  ul{
+    list-style: circle;
+  }
+  .menu-li {
+    line-height: 17px;
+    -webkit-transform: translateZ(0);
+  }
+  .menu-link {
+    width: 100%;
+    display: inline-block;
+    line-height: inherit;
+    text-align: left;
+    box-sizing: border-box;
+    color: map_get($component-menu-list,menuLinkColor);
+    padding: 10px;
+    @include clearHighlightColor();
+    font-size: 1em;
+    font-weight: bold;
+    &:hover{
+      color:map_get($component-menu-list,childMenuLinkHoverBGColor);
+    }
+  }
+  .child-menu-ul {
+    @include transition(all 0.3s cubic-bezier(0.23, 1, 0.32, 1));
+    overflow: hidden;
+    max-height: 0;
+    &.open {
+      max-height: 9999px;
+    }
+  }
+  .child-menu-link {
+    @extend .menu-link;
+    @include transition(background 0.1s);
+    padding-left: 15%;
+    word-wrap: break-word;
+    font-weight: 100;
+    &:before{
+      content: "˙";
+    }
+  }
+}
