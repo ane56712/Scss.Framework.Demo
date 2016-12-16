@@ -1,0 +1,22 @@
+{
+  "name": "scss.framework.demo",
+  "version": "1.0.0",
+  "description": "demo未來前台scss的開發架構",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Chi_Lin@bitbucket.org/Chi_Lin/scss.framework.demo.git"
+  },
+  "author": "chilin",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Chi_Lin/scss.framework.demo#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.8.10",
+    "gulp-compass": "^2.0.3",
+    "gulp-pipe": "^1.0.4"
+  }
+}
