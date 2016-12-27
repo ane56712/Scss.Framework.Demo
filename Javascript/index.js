@@ -23,7 +23,7 @@ function LoadPageStyleSheet(device,theme){
     var linkTag = document.createElement('link');
     linkTag.type = "text/css";
     linkTag.rel = "stylesheet";
-    var cssUrl = '../../Styles/Theme/Theme'+ theme +'/'+ device +'/Page/OfficialIndex/officialIndex.css';
+    var cssUrl = '../../Styles/Theme/Theme'+ theme +'/'+ device +'/Page/OfficialIndex/controller.css';
     linkTag.setAttribute('href',cssUrl);
     document.head.appendChild(linkTag);
 }
