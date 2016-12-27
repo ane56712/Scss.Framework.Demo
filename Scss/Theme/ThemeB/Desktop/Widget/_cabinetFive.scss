@@ -1,0 +1,9 @@
+@import "../Component/cabinet";
+.cabinet-list {
+  padding: 0 2%;
+  .cabinet-li {
+    margin-bottom:3%;
+    box-sizing: border-box;
+    width: 20%;
+  }
+}

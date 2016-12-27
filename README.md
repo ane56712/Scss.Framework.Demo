@@ -60,3 +60,5 @@ B    |Desktop        | Pink
         modal:1050, 
         modalBack:1040
 );```
+4. sass extend寫法：若某css class沒有被html引用，僅被其他class繼承用，可使用「%」後面加上要合併樣式的名稱，這樣compile出來的css比較少
+```%all-h1{ font-size: 20px; line-height: 1.8; letter-spacing: 1px; } .header-h1{ @extend %all-h1; color: #000; }```
