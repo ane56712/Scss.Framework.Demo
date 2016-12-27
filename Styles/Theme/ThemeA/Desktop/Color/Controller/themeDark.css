@@ -6,13 +6,13 @@
 .layout-header {
   position: fixed;
   height: inherit;
-  background-color: rgba(238, 138, 162, 0.85);
+  background-color: rgba(0, 0, 0, 0.85);
   color: #fff;
   z-index: 500;
 }
 
 body {
-  background-color: #fff;
+  background-color: #4A4A4A;
 }
 
 .container {
@@ -86,7 +86,7 @@ body {
   -webkit-font-smoothing: antialiased;
   float: right;
   font-size: 24px;
-  color: #EE8AA2;
+  color: black;
 }
 .menu-list .menu-link, .menu-list .child-menu-link {
   width: 100%;
@@ -94,7 +94,7 @@ body {
   line-height: inherit;
   text-align: left;
   box-sizing: border-box;
-  color: #666666;
+  color: #D4D9DE;
   padding: 12px 20px;
   border-bottom: 1px dashed #cccccc;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -124,9 +124,9 @@ body {
   transition: background 0.1s;
   padding-left: 10%;
   word-wrap: break-word;
-  background: #ffeef3;
+  background: #999999;
 }
 .menu-list .child-menu-link:hover {
-  background-color: #f9bdcf;
+  background-color: #d1d6d6;
   color: #fff;
 }

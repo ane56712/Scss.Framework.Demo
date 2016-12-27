@@ -7,12 +7,12 @@
   position: fixed;
   height: inherit;
   background-color: rgba(76, 173, 76, 0.85);
-  color: #ffffff;
+  color: #fff;
   z-index: 500;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .container {
@@ -86,7 +86,7 @@ body {
   -webkit-font-smoothing: antialiased;
   float: right;
   font-size: 24px;
-  color: #72ca6c;
+  color: #4CAD4C;
 }
 .menu-list .menu-link, .menu-list .child-menu-link {
   width: 100%;

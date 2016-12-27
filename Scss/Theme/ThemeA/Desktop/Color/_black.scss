@@ -1,4 +1,3 @@
-@import "baseDark";
 $theme-color:$black;
 
 $layout-header: (
@@ -9,7 +8,7 @@ $component-menu-list: (
         menuLiPseudoColor:$theme-color,
         menuLinkColor:$mainText,
         menuLinkBorderColor:$white6,
-        childMenuLinkBGColor:$gray7,
-        childMenuLinkHoverBGColor:$theme-color,
+        childMenuLinkBGColor:$light-gray,
+        childMenuLinkHoverBGColor:$light-gray2,
         childMenuLinkHoverColor:$white
 );
